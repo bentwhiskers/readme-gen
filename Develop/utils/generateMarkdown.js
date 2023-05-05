@@ -65,13 +65,28 @@ function generateMarkdown(data) {
   template += "\n";
 
   // add description 
+  template += `## ${sections[0]}\n`;
+  template += data.description + '\n';
   // add installation
+  template += `## ${sections[1]}\n`;
+  template += data.installation + '\n';
   // add usage
+  template += `## ${sections[2]}\n`; 
+  template += data.usage + '\n';
   // add license
+  template += renderLicenseSection(data.license) + '\n';
   // add contributing
+  template += `## ${sections[4]}\n`;
+  template += data.contributing + '\n';
   // add tests
+  template += `## ${sections[5]}\n`;
+  template += data.tests + '\n';
   // add questions
+  template += `## ${sections[6]}\n`;
+  template += "You can find me at (https://github.com/" + data.username + ") on Github\n";
+  template += `Email me at ${data.email} for additional questions.\n`
   
+  return template;
 }
 
 module.exports = generateMarkdown;
