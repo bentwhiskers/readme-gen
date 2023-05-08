@@ -74,7 +74,7 @@ function generateMarkdown(data) {
  
   template += `## ${sections[5]}\n`;
   template += data.tests + '\n';
-  \
+  
   template += `## ${sections[6]}\n`;
   template += "You can find me at (https://github.com/" + data.username + ") on Github\n";
   template += `Email me at ${data.email} for additional questions.\n`
