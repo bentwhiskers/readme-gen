@@ -1,5 +1,5 @@
-# title
-![License Badge](https://shields.io/badge/license-BSD-green)
+# Readme-gen
+![License Badge](https://shields.io/badge/license-MIT-green)
 ## Table of Contents
 1. [Description](#description)
 2. [Installation](#installation)
@@ -10,18 +10,18 @@
 7. [Questions](#questions)
 
 ## Description
-des
+This app will generate a readme.md file per user input
 ## Installation
-inst
+To install:
 ## Usage
-use
+Open terminal and run node index.js
 ## License
-See https://opensource.org/licenses/BSD-3-Clause to get more information about this license
+See https://mit-license.org/ to get more information about this license
 
 ## Contributing
-guidelines
+To contribute:
 ## Tests
-inst
+To test:
 ## Questions
-You can find me at (https://github.com/user) on Github
-Email me at email for additional questions.
+You can find me at (https://github.com/bentwhiskers) on Github
+Email me at abbott1414@gmail.com for additional questions.
