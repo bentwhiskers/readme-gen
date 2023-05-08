@@ -1,5 +1,3 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
 function renderLicenseBadge(license) {
   let badge = "";
 
@@ -9,8 +7,6 @@ function renderLicenseBadge(license) {
   return badge;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
 function renderLicenseLink(license) {
   let licenseLink;
 
@@ -35,8 +31,6 @@ function renderLicenseLink(license) {
   return licenseLink;
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
 function renderLicenseSection(license) {
   let licenseSection = "";
   
@@ -47,7 +41,6 @@ function renderLicenseSection(license) {
   return licenseSection;
 }
 
-// TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   
   const sections = ['Description', 'Installation', 'Usage', 'License', 'Contributing', 'Tests', 'Questions'];
@@ -64,24 +57,24 @@ function generateMarkdown(data) {
     }
   template += "\n";
 
-  // add description 
+
   template += `## ${sections[0]}\n`;
   template += data.description + '\n';
-  // add installation
+
   template += `## ${sections[1]}\n`;
   template += data.installation + '\n';
-  // add usage
+
   template += `## ${sections[2]}\n`; 
   template += data.usage + '\n';
-  // add license
+
   template += renderLicenseSection(data.license) + '\n';
-  // add contributing
+  
   template += `## ${sections[4]}\n`;
   template += data.contributing + '\n';
-  // add tests
+ 
   template += `## ${sections[5]}\n`;
   template += data.tests + '\n';
-  // add questions
+  \
   template += `## ${sections[6]}\n`;
   template += "You can find me at (https://github.com/" + data.username + ") on Github\n";
   template += `Email me at ${data.email} for additional questions.\n`
